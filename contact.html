@@ -4,9 +4,9 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
-
 </head>
 
 <body>
@@ -36,32 +36,49 @@
     <main class="contact-main">
         <h2>Contact Me</h2>
 
+        <div class="contact-info-cards">
+            <div class="contact-info-card">
+                <div class="contact-info-icon">📍</div>
+                <div class="contact-info-label">Location</div>
+                <div class="contact-info-value">Pooler, GA</div>
+            </div>
+            <div class="contact-info-card">
+                <div class="contact-info-icon">🎓</div>
+                <div class="contact-info-label">University</div>
+                <div class="contact-info-value">Georgia Southern</div>
+            </div>
+            <div class="contact-info-card">
+                <div class="contact-info-icon">📸</div>
+                <div class="contact-info-label">Instagram</div>
+                <div class="contact-info-value">
+                    <a href="https://www.instagram.com/ian.h.mx5/" class="links" target="_blank">@ian.h.mx5</a>
+                </div>
+            </div>
+        </div>
+
         <form action="https://formspree.io/f/xreorpbq" method="POST">
             <div>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-
             <div>
                 <label for="email">Email</label><br>
                 <input type="email" id="email" name="email" placeholder="your@email.com" required>
             </div>
-
             <div>
                 <label for="subject">Subject</label><br>
                 <input type="text" id="subject" name="subject" placeholder="What's this about?">
             </div>
-
             <div>
                 <label for="message">Message</label><br>
                 <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
             </div>
-
             <button type="submit">Send Message</button>
         </form>
+
         <div class="contact-socials">
             <div class="social-buttons">
-                <a href="https://www.instagram.com/ian.h.mx5/" class="pill-btn">Instagram</a>
+                <a href="https://www.instagram.com/ian.h.mx5/" class="pill-btn" target="_blank">Instagram</a>
                 <a href="" class="pill-btn">Download Resume</a>
             </div>
         </div>
@@ -76,6 +93,14 @@
         </div>
     </footer>
 
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
-
 </html>
