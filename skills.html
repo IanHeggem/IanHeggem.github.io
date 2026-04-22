@@ -4,9 +4,9 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
-
 </head>
 
 <body>
@@ -34,95 +34,88 @@
     </header>
 
     <main class="skills-main">
-        <h2>Skills & Certifications</h2>
-
-        <p>
-            This page provides an overview of the technical skills and certifications
-            that support my hands-on experience in IT systems and diagnostics.
-        </p>
+        <h2>Skills &amp; Certifications</h2>
+        <p>An overview of the technical skills and certifications that support my hands-on experience in IT systems and diagnostics.</p>
 
         <h3>Core Technical Skills</h3>
         <div class="skills">
-            <ul>
-                <li>Systematic troubleshooting and root-cause analysis</li>
-                <li>Hardware and software diagnostics</li>
-                <li>Basic network configuration and troubleshooting</li>
-                <li>Technical documentation and communication</li>
-                <li>Installing and configuring operating systems</li>
-            </ul>
+            <div class="tool-tags centered-tags">
+                <span class="tag">Systematic Troubleshooting</span>
+                <span class="tag">Root-Cause Analysis</span>
+                <span class="tag">Hardware Diagnostics</span>
+                <span class="tag">Software Diagnostics</span>
+                <span class="tag">Network Configuration</span>
+                <span class="tag">Technical Documentation</span>
+                <span class="tag">OS Installation &amp; Setup</span>
+            </div>
         </div>
 
         <h3>Operating Systems</h3>
         <div class="skills">
-            <ul>
-                <li>Windows</li>
-                <li>Linux</li>
-                <li>MacOS</li>
-            </ul>
+            <div class="tool-tags centered-tags">
+                <span class="tag">Windows</span>
+                <span class="tag">Linux</span>
+                <span class="tag">macOS</span>
+            </div>
         </div>
 
         <h3>Networking</h3>
         <div class="skills">
-            <ul>
-                <li>TCP/IP fundamentals</li>
-                <li>DNS and DHCP</li>
-                <li>Basic wired and wireless networking</li>
-            </ul>
+            <div class="tool-tags centered-tags">
+                <span class="tag">TCP/IP Fundamentals</span>
+                <span class="tag">DNS &amp; DHCP</span>
+                <span class="tag">Wired Networking</span>
+                <span class="tag">Wireless Networking</span>
+            </div>
         </div>
 
-        <h3>Diagnostics & Tools</h3>
+        <h3>Diagnostics &amp; Tools</h3>
         <div class="skills">
-            <ul>
-                <li>ISTA (BMW diagnostic software)</li>
-                <li>Digital Wrench 1 & 2 (Indian Motorcycle)</li>
-                <li>Aftermarket diagnostic scan tools (e.g., Hex GS-911)</li>
-                <li>Digital multimeter usage</li>
-            </ul>
+            <div class="tool-tags centered-tags">
+                <span class="tag">ISTA (BMW)</span>
+                <span class="tag">Digital Wrench 1 &amp; 2</span>
+                <span class="tag">Hex GS-911</span>
+                <span class="tag">Digital Multimeter</span>
+            </div>
         </div>
 
         <h3>Programming / Scripting</h3>
         <div class="skills">
-            <ul>
-                <li>Python (basic scripting)</li>
-                <li>Java (intermediate)</li>
-                <li>C (fundamentals)</li>
-                <li>Ruby (basic familiarity)</li>
-            </ul>
+            <div class="tool-tags centered-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">C</span>
+                <span class="tag">Ruby</span>
+            </div>
         </div>
 
         <h3>Certifications</h3>
-
-        <table>
-            <tr>
-                <th>Certification</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td>Indian Motorcycle Master Technician</td>
-                <td>Completed</td>
-            </tr>
-            <tr>
-                <td>CompTIA A+</td>
-                <td>In Progress</td>
-            </tr>
-            <tr>
-                <td>CompTIA Network+</td>
-                <td>Planned</td>
-            </tr>
-            <tr>
-                <td>CompTIA Security+</td>
-                <td>Planned</td>
-            </tr>
-        </table>
+        <div class="cert-table">
+            <div class="cert-row">
+                <span class="cert-name">Indian Motorcycle Master Technician</span>
+                <span class="timeline-date">Completed</span>
+            </div>
+            <div class="cert-row">
+                <span class="cert-name">CompTIA A+</span>
+                <span class="cert-badge-inprogress">In Progress</span>
+            </div>
+            <div class="cert-row">
+                <span class="cert-name">CompTIA Network+</span>
+                <span class="cert-badge-planned">Planned</span>
+            </div>
+            <div class="cert-row">
+                <span class="cert-name">CompTIA Security+</span>
+                <span class="cert-badge-planned">Planned</span>
+            </div>
+        </div>
 
         <br><br>
-
     </main>
 
     <footer>
         <div>
             <ul>
-                <li> <a href="projects.html" class="links">Projects</a></li>
+                <li><a href="projects.html" class="links">Projects</a></li>
                 <br>
                 <li><a href="" class="links">Resume</a></li>
                 <br>
@@ -132,6 +125,14 @@
         </div>
     </footer>
 
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
-
 </html>
