@@ -4,6 +4,7 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
 
@@ -36,47 +37,101 @@
     <main class="main-page">
         <h2>Experience</h2>
 
-        <p>I have hands-on experience building, configuring, and troubleshooting desktop and laptop
-            computer systems, including hardware installation, Windows and Linux OS setup, and basic network
-            connectivity issues. This includes diagnosing boot failures, component faults,
-            and software-related performance problems using systematic troubleshooting
-            methods.</p>
+        <div class="stat-cards">
+            <div class="stat-card">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Dealership</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Riding</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Diagnostic Platforms</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Master Tech Cert</div>
+            </div>
+        </div>
 
-        <p>In addition, I have real-world experience working with electrical systems on
-            motorcycles in a dealership environment, working at a BMW Motorrad and Indian
-            motorcycle dealership. I regularly used manufacturer-specific diagnostic
-            software, scan tools, and electrical testing equipment to identify
-            faults in sensors, wiring, and control systems. This required interpreting
-            diagnostic data, verifying symptoms, and confirming repairs under time
-            constraints.</p>
+        <div class="timeline">
 
-        <details>
-            <summary><h4 style="display:inline;">Troubleshooting Approach</h4></summary>
-            <p>
-                The following is the troubleshooting methodology I developed through hands-on diagnostic
-                work, which directly transfers to IT, cybersecurity and system administration roles:
-            </p>
-            <ul>
-                <li>Identify and verify the reported issue</li>
-                <li>Collect diagnostic data using appropriate software or tools</li>
-                <li>Analyze system data, fault codes, and logs</li>
-                <li>Narrow the scope and identify likely root causes</li>
-                <li>Test potential solutions from most to least probable</li>
-                <li>Verify resolution through follow-up testing and diagnostics</li>
-            </ul>
-            I am familiar with using the following tools and systems for diagnostics:
-        </details>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h4>Motorcycle Technician</h4>
+                            <span class="timeline-company">BMW Motorrad &amp; Indian Motorcycle Dealership</span>
+                        </div>
+                        <span class="timeline-date">2022 – 2025</span>
+                    </div>
+                    <p>Worked with electrical systems on motorcycles in a dealership environment, using manufacturer-specific diagnostic software, scan tools, and electrical testing equipment to identify faults in sensors, wiring, and control systems. Interpreted diagnostic data, verified symptoms, and confirmed repairs under time constraints.</p>
+                    <div class="tool-tags">
+                        <span class="tag">ISTA (BMW Motorrad)</span>
+                        <span class="tag">Digital Wrench 1 &amp; 2</span>
+                        <span class="tag">Hex GS-911</span>
+                        <span class="tag">Digital Multimeter</span>
+                        <span class="tag">Electrical Diagnostics</span>
+                        <span class="tag">Root-Cause Analysis</span>
+                    </div>
+                </div>
+            </div>
 
-        <h4>Diagnostic Tools & Systems</h4>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                    <div class="timeline-header">
+                        <div>
+                            <h4>IT Systems &amp; Hardware</h4>
+                            <span class="timeline-company">Self-Directed / Personal Projects</span>
+                        </div>
+                        <span class="timeline-date">2020 – Present</span>
+                    </div>
+                    <p>Hands-on experience building, configuring, and troubleshooting desktop and laptop computer systems, including hardware installation, Windows and Linux OS setup, and basic network connectivity. Diagnosed boot failures, component faults, and software-related performance problems using systematic troubleshooting methods.</p>
+                    <div class="tool-tags">
+                        <span class="tag">Windows</span>
+                        <span class="tag">Linux</span>
+                        <span class="tag">Hardware Assembly</span>
+                        <span class="tag">Network Config</span>
+                        <span class="tag">OS Installation</span>
+                        <span class="tag">Boot Diagnostics</span>
+                    </div>
+                </div>
+            </div>
 
-        <ul>
-            <li>ISTA (BMW Motorrad diagnostic software)</li>
-            <li>Digital Wrench 1 & 2 (Indian Motorcycle diagnostic software)</li>
-            <li>Digital multimeters for electrical testing</li>
-            <li>Aftermarket diagnostic scan tools (e.g., Hex GS-911)</li>
-        </ul>
+        </div>
 
-        <br><br>
+        <h3>Troubleshooting Methodology</h3>
+        <p>The following process was developed through hands-on diagnostic work and transfers directly to IT, cybersecurity, and system administration roles:</p>
+        <div class="methodology-steps">
+            <div class="method-step">
+                <div class="step-num">01</div>
+                <div class="step-text">Identify and verify the reported issue</div>
+            </div>
+            <div class="method-step">
+                <div class="step-num">02</div>
+                <div class="step-text">Collect diagnostic data using appropriate software or tools</div>
+            </div>
+            <div class="method-step">
+                <div class="step-num">03</div>
+                <div class="step-text">Analyze system data, fault codes, and logs</div>
+            </div>
+            <div class="method-step">
+                <div class="step-num">04</div>
+                <div class="step-text">Narrow the scope and identify likely root causes</div>
+            </div>
+            <div class="method-step">
+                <div class="step-num">05</div>
+                <div class="step-text">Test potential solutions from most to least probable</div>
+            </div>
+            <div class="method-step">
+                <div class="step-num">06</div>
+                <div class="step-text">Verify resolution through follow-up testing and diagnostics</div>
+            </div>
+        </div>
 
     </main>
 
@@ -94,6 +149,15 @@
     </footer>
 
 
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
 
 </html>
