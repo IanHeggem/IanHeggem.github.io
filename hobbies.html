@@ -4,9 +4,9 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
-
 </head>
 
 <body>
@@ -35,29 +35,37 @@
 
     <main>
         <h2>Hobbies</h2>
+        <p>I have many hobbies but of them all, the biggest are motorcycles, computers/tech, and gaming.</p>
 
-        <p>I have many hobbies but of them all, the biggest are motorcycles,
-            computers/tech, and gaming.</p>
+        <h3>Motorcycles</h3>
+        <p>My biggest hobby is motorcycles. I have been riding since July 2022 — my dad paid for me to take
+            the Motorcycle Safety Foundation course as my High School graduation gift, and I've been hooked ever since.
+            From track days, to long distance trips, to riding off-road through the Cascades in the Pacific
+            Northwest, I have done it all!</p>
 
-        <h4>Motorcycles</h4>
-        <div class="motorcycles">
-            <p>My biggest hobby is motorcycles. I have been riding motorcycles since
-                July of 2022. My dad got me into riding by paying for me to take the
-                Motorcycle Safety Foundation safety course to learn how to ride as my
-                High School graduation gift, and ever since then I have fallen in love.</p>
-            <br>
-            <p> I have owned the following motorcycles in my riding career:</p>
-            <ul>
-                <li>2022 Kawasaki Ninja 400 KRT Edition</li>
-                <li>2005 Yamaha YZF-R6 Raven Edition</li>
-                <li>2023 BMW F750GS Sport</li>
-                <li>2023 BMW R1250GS Trophy Edition</li>
-            </ul>
-            <p> From track days, to long distance trips, to riding off-road through the
-                cascades in the Pacific Northwest I have done it all!</p>
+        <h4>Bikes I've Owned</h4>
+        <div class="bike-cards">
+            <div class="bike-card">
+                <div class="bike-card-year">2022</div>
+                <div class="bike-card-name">Kawasaki Ninja 400</div>
+                <div class="bike-card-sub">KRT Edition</div>
+            </div>
+            <div class="bike-card">
+                <div class="bike-card-year">2005</div>
+                <div class="bike-card-name">Yamaha YZF-R6</div>
+                <div class="bike-card-sub">Raven Edition</div>
+            </div>
+            <div class="bike-card">
+                <div class="bike-card-year">2023</div>
+                <div class="bike-card-name">BMW F750GS</div>
+                <div class="bike-card-sub">Sport</div>
+            </div>
+            <div class="bike-card">
+                <div class="bike-card-year">2023</div>
+                <div class="bike-card-name">BMW R1250GS</div>
+                <div class="bike-card-sub">Trophy Edition</div>
+            </div>
         </div>
-
-        <br><br>
 
         <div class="bike-gallery">
             <figure class="bike-image">
@@ -66,23 +74,20 @@
                 </a>
                 <figcaption>Going To The Sun Road, Glacier National Park</figcaption>
             </figure>
-
             <figure class="bike-image">
                 <a href="images/ggbridge.jpeg" target="_blank">
                     <div class="image bike2"></div>
                 </a>
                 <figcaption>My Dad and I overlooking the Golden Gate Bridge in San Francisco</figcaption>
             </figure>
-
             <figure class="bike-image">
                 <a href="images/trackday-1.jpg" target="_blank">
                     <div class="image bike3"></div>
                 </a>
                 <figcaption>Track day on my old 2005 R6 at The Ridge Motorsports Park</figcaption>
             </figure>
-
             <figure class="bike-image">
-                <a href="images/trackday-2.jpg">
+                <a href="images/trackday-2.jpg" target="_blank">
                     <div class="image bike4"></div>
                 </a>
                 <figcaption>Track day on my old 2005 R6 at The Ridge Motorsports Park</figcaption>
@@ -90,29 +95,26 @@
         </div>
 
         <h4>Track Day Video</h4>
-        <video src="images/trackdayvid.MP4" controls width="100%">
-            Your browser does not support the video tag.
-        </video>
-        <p> Track day of me at The Ridge Motorsports Park in Shelton, Washington.</p>
-
-        <h4>Computers & Gaming</h4>
-        <div class="computers-and-gaming">
-            Another one of my hobbies is building computers and gaming. I have
-            been gaming ever since I was a kid, and started my hobby
-            of building desktop computers in 2020 when I was stuck at home at
-            the beginning of the COVID-19 pandemic. I started watching a bunch
-            of tech videos on YouTube, did a bunch of research, and built my
-            first gaming PC. Since then, I have built a handful of desktop
-            computers and upgraded a handful of laptop components as well.
-            I have also familliarized myself with the process of installing
-            both Windows and Linux based operating systems.
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3OLfdqUmMX8?si=GloEUbBWaSDJrJ_F"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
         </div>
-        <br><br>
+        <p>Track day of me at The Ridge Motorsports Park in Shelton, Washington.</p>
+
+        <h3>Computers &amp; Gaming</h3>
+        <p>Another big hobby is building computers and gaming. I've been gaming since I was a kid, and started
+            building desktop PCs in 2020 during the COVID-19 pandemic. After watching tech videos on YouTube and
+            doing research, I built my first gaming PC — and have built several more since. I've also familiarized
+            myself with installing both Windows and Linux operating systems.</p>
 
         <div class="bike-gallery">
             <figure class="bike-image">
-                <div class="image gaming-pc"></div>
-                <figcaption>My first gaming pc that I built</figcaption>
+                <a href="images/gaming-pc.jpg" target="_blank">
+                    <div class="image gaming-pc"></div>
+                </a>
+                <figcaption>My first gaming PC that I built</figcaption>
             </figure>
         </div>
 
@@ -121,7 +123,7 @@
     <footer>
         <div>
             <ul>
-                <li> <a href="projects.html" class="links">Projects</a></li>
+                <li><a href="projects.html" class="links">Projects</a></li>
                 <br>
                 <li><a href="" class="links">Resume</a></li>
                 <br>
@@ -131,7 +133,15 @@
         </div>
     </footer>
 
-
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
 
 </html>
