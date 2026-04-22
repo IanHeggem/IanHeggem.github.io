@@ -546,11 +546,6 @@ main.contact-main form {
     margin-top: 0.2rem;
 }
 
-.contact-socials {
-    margin-top: 2rem;
-    text-align: center;
-}
-
 .social-buttons {
     display: flex;
     gap: 1rem;
