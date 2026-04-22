@@ -4,6 +4,7 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
 </head>
@@ -36,18 +37,38 @@
         <h2 class="About-me-h2">About Me</h2>
         <div class="about-layout">
             <div class="about-image-col">
-                <div class="about-me"><img src="images/ian-track-day.jpg" alt="Picture of me at the race track"></div>
+                <div class="about-me">
+                    <a href="images/ian-track-day.jpg" target="_blank">
+                        <img src="images/ian-track-day.jpg" alt="Picture of me at the race track">
+                    </a>
+                </div>
             </div>
             <div class="about-text-col">
                 <p>Information Technology student that transferred from Western Washington University to Georgia Southern
-                    University with a focus on
-                    Cybersecurity and a passion for motorcycle diagnostics and software. </p>
-
+                    University with a focus on Cybersecurity and a passion for motorcycle diagnostics and software.</p>
                 <p>I grew up in Whatcom County, Washington, and moved to Pooler, GA at the end of 2025. My love for
-                    technology began in 2020 when
-                    the COVID-19 pandemic began and we were all stuck at home. I started watching tech videos
-                    online and it inspired me to build a gaming computer and I have had a passion for tech and a desire
-                    to learn more ever since.</p>
+                    technology began in 2020 when the COVID-19 pandemic began and we were all stuck at home. I started
+                    watching tech videos online and it inspired me to build a gaming computer and I have had a passion
+                    for tech and a desire to learn more ever since.</p>
+            </div>
+        </div>
+
+        <div class="about-stats">
+            <div class="stat-card">
+                <div class="stat-number">2028</div>
+                <div class="stat-label">Expected Graduation</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">GSU</div>
+                <div class="stat-label">Georgia Southern University</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years in Tech</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">WA→GA</div>
+                <div class="stat-label">Washington to Georgia</div>
             </div>
         </div>
     </main>
@@ -55,7 +76,7 @@
     <footer>
         <div>
             <ul>
-                <li> <a href="projects.html" class="links">Projects</a></li>
+                <li><a href="projects.html" class="links">Projects</a></li>
                 <br>
                 <li><a href="" class="links">Resume</a></li>
                 <br>
@@ -65,6 +86,14 @@
         </div>
     </footer>
 
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
-
 </html>
