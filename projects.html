@@ -4,9 +4,9 @@
 <head>
     <title>Ian Heggem</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/cybersecurity-portfolio.ico" type="images/x-icon">
-
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-page">
         <h2>Projects</h2>
         <p>A selection of technical and diagnostic projects demonstrating my hands-on experience.</p>
 
@@ -42,22 +42,24 @@
                 <img src="images/cybersecurity-portfolio.ico" alt="Portfolio Website">
             </div>
             <div class="project-content">
-                <h4>Personal Portfolio Website</h4>
+                <div class="project-title-row">
+                    <h4>Personal Portfolio Website</h4>
+                    <span class="status-badge status-inprogress">In Progress</span>
+                </div>
                 <p><strong>Description:</strong> A personal website built to showcase my IT skills,
                     experience, and technical projects.</p>
                 <p><strong>What I Did:</strong></p>
                 <ul>
                     <li>Designed multi-page site structure</li>
-                    <li>Wrote semantic HTML and basic CSS</li>
+                    <li>Wrote semantic HTML and CSS</li>
                     <li>Focused on accessibility and clarity</li>
                 </ul>
-                <p><strong>Tools & Skills Used:</strong></p>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>Basic web design principles</li>
-                </ul>
-                <p><strong>Status:</strong> In Progress</p>
+                <div class="tool-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Web Design Principles</span>
+                </div>
             </div>
         </div>
 
@@ -66,7 +68,10 @@
                 <img src="images/cel.png" alt="Motorcycle Diagnostics">
             </div>
             <div class="project-content">
-                <h4>Motorcycle Diagnostic Workflow Documentation</h4>
+                <div class="project-title-row">
+                    <h4>Motorcycle Diagnostic Workflow Documentation</h4>
+                    <span class="status-badge status-completed">Completed</span>
+                </div>
                 <p><strong>Description:</strong> Documentation of a structured diagnostic process
                     used to identify electrical and control system faults.</p>
                 <p><strong>What I Did:</strong></p>
@@ -75,13 +80,12 @@
                     <li>Interpreted fault codes and system behavior</li>
                     <li>Verified repairs through follow-up testing</li>
                 </ul>
-                <p><strong>Tools & Skills Used:</strong></p>
-                <ul>
-                    <li>Manufacturer diagnostic software</li>
-                    <li>Multimeter testing</li>
-                    <li>Root-cause analysis</li>
-                </ul>
-                <p><strong>Status:</strong> Completed</p>
+                <div class="tool-tags">
+                    <span class="tag">Manufacturer Diagnostic Software</span>
+                    <span class="tag">Multimeter Testing</span>
+                    <span class="tag">Root-Cause Analysis</span>
+                    <span class="tag">Technical Documentation</span>
+                </div>
             </div>
         </div>
 
@@ -98,6 +102,14 @@
         </div>
     </footer>
 
+    <script>
+        const navLinks = document.querySelectorAll("nav a");
+        const current = location.pathname.split("/").pop() || "index.html";
+        navLinks.forEach(link => {
+            if (link.getAttribute("href") === current) {
+                link.classList.add("nav-active");
+            }
+        });
+    </script>
 </body>
-
 </html>
