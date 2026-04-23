@@ -33,6 +33,15 @@
         </div>
     </header>
 
+    <div id="error-overlay" style="display:none;">
+        <div id="error-popup">
+            <div id="error-icon">⚠️</div>
+            <div id="error-title">Error</div>
+            <div id="error-message">Please fill out all required fields.</div>
+            <button id="error-close" onclick="document.getElementById('error-overlay').style.display='none'">OK</button>
+        </div>
+    </div>
+
     <main class="contact-main">
         <h2>Contact Me</h2>
 
@@ -56,7 +65,7 @@
             </div>
         </div>
 
-        <form action="https://formspree.io/f/xreorpbq" method="POST">
+        <form id="contact-form" action="https://formspree.io/f/xreorpbq" method="POST">
             <div>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -76,7 +85,6 @@
             <button type="submit">Send Message</button>
         </form>
 
-
     </main>
 
     <footer>
@@ -95,6 +103,20 @@
             if (link.getAttribute("href") === current) {
                 link.classList.add("nav-active");
             }
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", function(e) {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            if (!name || !email || !message) {
+                e.preventDefault();
+                document.getElementById("error-overlay").style.display = "flex";
+            }
+        });
+
+        document.getElementById("error-overlay").addEventListener("click", function(e) {
+            if (e.target === this) this.style.display = "none";
         });
     </script>
 </body>
