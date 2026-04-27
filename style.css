@@ -402,6 +402,10 @@ main.skills-main {
 }
 
 /* ── HOBBIES page ── */
+.hobbies-txt{
+    width: 50%;
+}
+
 .bike-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
